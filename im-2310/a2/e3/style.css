@@ -26,7 +26,8 @@ body{
 /* I add "hover" function to make users to realise they can click the navigation menu to jump to sepecific area of content, and I chose blue as the hover color as it will be worked well as background color light green.*/
 a:hover{
   color:blue;
-  text-decoration:underline;
+  cursor: pointer;
+  
 }
 
 nav {
