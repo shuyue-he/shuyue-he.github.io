@@ -1,7 +1,4 @@
-/*
-  This one CSS file is imported into both index.html AND hosono.html so you need to be careful that it 
-  works for both.
-*/
+
 
 *{
   box-sizing: border-box;
@@ -10,14 +7,11 @@
 }
 
 :root{
-  /* first two colours come from Kuroi's Manga Pallete Palette */
-  /* https://lospec.com/palette-list/manga-pallete */
   --col-01:#171219;
   --col-02:#f2fbeb;
   --col-03:#5252ff;
   --col-04:#b6e878;
   font-size: 16px;
-  /* scroll behaviour makes the <a> links to ids scroll to position over time rather than immediately */
   scroll-behavior: smooth;
   
 }
@@ -26,11 +20,12 @@ body{
   padding: 1rem;
   background-color: var(--col-02);
   color: var(--col-01);
+  
 }
 
-
+/* I add "hover" function to make users to realise they can click the navigation menu to jump to sepecific area of content, and I chose blue as the hover color as it will be worked well as background color light green.*/
 a:hover{
-  color:red;
+  color:blue;
   text-decoration:underline;
 }
 
@@ -98,19 +93,30 @@ li ul{
   column-width: 25rem;
 }
 
+/* As I'd like to make users to realise there is an option to change the reading mode, so I made this changing mode button more obvious by adding the shadow and border. I chose this background color is because it will be matched well with the background color of the webpage and color palette of the website. Also, when users click the button, it will trigger the box-shadow feedback which will fullfill the anticipation of the users to confirm that they did click the button. */
 #mode-button{
   float: right;
-  /* note the use of position: sticky to keep the button on the page even with scrolling */
   position:sticky;
   top: 1rem;
   cursor: pointer;
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 0.5rem;
+  text-align: center;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 5px;
+  background-color: #deebd5;
+  background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
 }
 
 #mode-button:hover{
-  color:red;
+  background-color: rgb(78, 169, 215);
 }
-
-/* code for loading page */
+#mode-button:active{
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
 
 #load-body{
   height: 100vh;
@@ -120,7 +126,7 @@ li ul{
   justify-content: center;
 }
 
-/* changing button to look like a link */
+/* I changed the mouse cursor to a pointer to instruct the users that is a link to be clicked. */
 #load-link:hover{
   color:var(--col-03);
   line-height: 1rem;
@@ -128,14 +134,12 @@ li ul{
   border: 0;
   cursor: pointer;
 }
-/* throbber while page is fake loading */
+
+/* I used a short animation to fake loading the progress bar which can fullfil users' anticipation and reduce anxiety to show them that the webiste is working and still loading for the next webpage. */
 #load-throbber{
-  /* the width, height and background-color give it a shape on the page without any content inside - 
-  these value are arbitrary, please change to create your own design  */
   width: 25%;
   height: 1rem;
   background-color:var(--col-03);
-  /* we also initially set display to none so it only shows once the link is clicked */
   display: none;
   background-image: repeating-linear-gradient(
     -45deg,
