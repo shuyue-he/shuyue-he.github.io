@@ -32,7 +32,6 @@ html {
   opacity: 0.8;
   text-shadow: 2rem 2rem 4rem #9b9494;
 }
-/* End of Common Styles */
 
 
 /* Styles for the Section 1 and navigation menu. */
@@ -55,7 +54,7 @@ html {
   font-weight: 700;
   letter-spacing: 0.2rem;
   color: #fff;
-  width: 1.5rem;
+  width: 2rem;
   word-wrap: break-word;
   text-align: center;
   transition: all 0.5s;
@@ -135,7 +134,7 @@ html {
 }
 
 .painting {
-  background-size: auto 110%;
+  background-size: auto 120%;
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 50px;
@@ -149,7 +148,7 @@ html {
 }
 
 .painting h3{
-  font-size: 18px;
+  font-size: 16.5px;
   position: absolute;
   bottom: 20px;
   left: 15px;
@@ -169,19 +168,6 @@ html {
   opacity: 1;
   transition: opacity 0.3s ease-in 0.4s;
 }
-
-@media (max-width:500px){
-  .paintings-wrapper{
-    width: 100vw;
-  }
-  .painting:nth-child(4){
-    display: none;
-  }
-  .painting:nth-child(5){
-    display: none;
-  }
-}
-
 
 
 /* This is styles for the artists' images,text and animation. */
@@ -203,7 +189,7 @@ html {
 }
 
 .artist {
-  width: 70rem;
+  width: 60rem;
   background-color: #ffffff;
   padding: 1rem 1rem 2rem 1rem;
   box-shadow: 1rem 1rem 2rem #ddd, -1rem -1rem 2rem #eee;
@@ -278,14 +264,14 @@ html {
 }
 
 .story-heading {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 500;
   color: #fff;
   margin-bottom: 1rem;
 }
 
 .story-paragraph {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #eee;
   text-align: justify;
   text-indent: 2rem;
@@ -294,7 +280,6 @@ html {
 
 /* This is the styles for the 500words of report. */
 .section-4 {
-  margin-top: 30rem;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -303,16 +288,9 @@ html {
   padding: 5rem 5rem;
 }
 
-.report {
-  flex:0.5;
-  height:100vh;
-  position: relative;
-  margin: 30px;
-}
-
 .report-paragraph {
   margin-top: 10rem;
-  font-size: 2.5rem;
+  font-size: 2rem;
   color:#fff;
   text-shadow: 2rem 2rem 4rem #aaa6a6;
   mix-blend-mode: overlay;
