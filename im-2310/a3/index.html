@@ -1,17 +1,122 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
-  <head>
-
-    <meta charset="utf-8"name="viewpoint"content="width=device-width, intial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Gallery</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Pacifico&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+
+<body>
+
+    <div class="container">
+        <!-- I like to use the navigation menu for users easily get to the area of website they like to see. -->
+        <section class="section-1" id="home">
+            <nav class="navbar">
+                <a href="#home" class="navbar-link">Home</a>
+                <a href="#paintings" class="navbar-link">Paintings</a>
+                <a href="#artists" class="navbar-link">Artists</a>
+                <a href="#report" class="navbar-link">Design Report</a>
+            </nav>
+            <div class="floating-bg"></div>
+            <h1 class="section-1-heading">Art Gallery</h1>
+        </section>
+
+        <!-- Reference: https://www.boredpanda.com/a-history-of-art-star-wars-style/?utm_source=google&utm_medium=organic&utm_campaign=organic -->
+        <!--I like to use sliders to show the paintings as it will give a brief information for the users, so users can easily navigate through the paintings via hover over the thumbnail of the paintings, then the thumbnail of paintings will be stretched out to show the full view of paintings.-->
+        <section class="section-2" id="paintings">
+            <h1 class="section-heading">Paintings</h1>
+            <div class="paintings-wrapper">
+                <div class="painting active" style = "background-image: url(images/picture1.jpg);">
+                    <h3>Chistinas Moisture Farm</h3>
+                </div>
+                <div class="painting" style = "background-image: url(images/picture2.jpg);">
+                    <h3>Mos Eisley Nighthawks</h3>
+                </div>
+                <div class="painting" style = "background-image: url(images/picture3.jpg);">
+                    <h3>Obi Wan maider, vous êtes mon seul espoir</h3>
+                </div>
+                <div class="painting" style = "background-image: url(images/picture4.jpg);">
+                    <h3>Starry Fighter Night over the Rhone</h3>
+                </div>
+                <div class="painting" style = "background-image: url(images/picture5.jpg);">
+                    <h3>The Anatomy Lesson by Dr. 2-1B</h3>
+                </div>        
+            </div>
+        </section>
+
+        <!--Reference: https://www.flavoursholidays.co.uk/blog/famous-italian-artists-painters/-->
+        <!-- This part I like to introduce some famous artists. Also, users can easily interact with the images by hovering over them or click the top right button of the image to see the introduction of the artist. -->
+        <section class="section-3" id="artists">
+            <h1 class="section-heading">Artists</h1>
+            <div class="artists-wrapper">
+                <div class="artist">
+                    <img src="images/Leonardo da Vinci.jpg" class="artists-img">
+                    <h2 class="artists-name">Leonardo da Vinci</h2>
+                    <div class="story-btn" title="My Story">
+                        <div class="story-btn-line"></div>
+                    </div>
+                    <div class="story">
+                        <h4 class="story-heading">About Me</h4>
+                        <p class="story-paragraph">Considered one of the greatest painters of all time, Leonardo da Vinci was also a polymath, an engineer, a scientist, a sculptor, a true Renaissance man! Despite fewer than 25 of his works surviving, his paintings are some of the most famous in the world. The Mona Lisa being the most famous portrait ever, and The Last Supper is the most reproduced religious painting.</p>
+                    </div>
+                </div>
+                <div class="artist">
+                    <img src="images/Gian Lorenzo Bernini.jpg" class="artists-img">
+                    <h2 class="artists-name">Gian Lorenzo Bernini</h2>
+                    <div class="story-btn" title="My Story">
+                        <div class="story-btn-line"></div>
+                    </div>
+                    <div class="story">
+                        <h4 class="story-heading">About Me</h4>
+                        <p class="story-paragraph">Not only a great Italian artist, Bernini is considered one of the greatest Italian architects of the Renaissance, and a truly universal artist. Although none of his paintings are known to exist, he was also famous as a painter, a designer, a playwright, a city planner and an inventor! Now, he is mostly known for his work as a sculptor, and the successor to Michelangelo, and is widely credited as having created the Baroque style.</p>
+                    </div>
+                </div>
+                <div class="artist">
+                    <img src="images/Giovanni Bellini.jpg" class="artists-img">
+                    <h2 class="artists-name">Giovanni Bellini</h2>
+                    <div class="story-btn" title="My Story">
+                        <div class="story-btn-line"></div>
+                    </div>
+                    <div class="story">
+                        <h4 class="story-heading">About Me</h4>
+                        <p class="story-paragraph">Born from a family of painters, Giovanni Bellini is considered to have revolutionised Venetian painting during the High Renaissance. Bellini was one of the most famous Italian artists from this time period.At the beginning of his long career, Bellini mastered the Renaissance techniques before adapting them and creating his own school of painting, focussed on a more sensuous and sumptuously coloured style.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+
+        <!-- This part is for the 500 words of design thoughts.  -->
+        <section class="section-4" id="report">
+            <h1 class="section-heading">Design Report</h1>
+            <p class="report-paragraph">The pairing I chose is that translucent is my abstract adjective and information design is my interaction design principle. 
+                <br/><br/>
+                I like to showcase the artistic styles of the entire website design as the website is a virtual gallery. As a result, the font styles I decided to use were Pacifico text for the website's name and Crimison text for the remaining text contents which are sourced from Google fonts. The background of the entire website is a linear gradient, and the gradient hues I selected are light shades of the RGB colours orange, red, and blue to maintain the translucent look. Additionally, there is a floating animation at the top of the page to add to the website's dynamic and creative sense when visitors come to view various pieces of art or to learn more about artists.
+                <br/><br/>
+                Hovering over and clicking are the two primary interactive activities on this website. The letters for the menu will be rearranged from vertical to horizontal on the landing page when users hover over the navigation menu at the top of the website. A translucent grey colour also serves as the background to draw attention to the menu link that users select and provide feedback. The users' chosen menu item will take them directly to the section of the website they want to visit.
+                <br/><br/>
+                Visitors will see paintings folded up like cards beneath the landing page. When visitors hover over on one of the cards, the painting will either expand to the left or right to show its whole picture. The wrap cards function of Javascript was used to build this as I want to increase the appeal of seeing artwork.
+                <br/><br/>
+                Under the paintings section is a section for the artists' introduction. When visitors hover over the artists' images, the photos change from blurry to clear thanks to CSS opacity transitions. The hidden text, which is the artist's introduction, will then be displayed on top of the artist's photograph when users click the top right button. The artist introduction will be closed when the button is clicked once more. This was made using JavaScript's toggle function and CSS's scale transitions.
+                <br/><br/>
+                This 500-word report, which explains my design intent and how to develop the website's interactions, is included in the website's bottom section. To preserve the aesthetics of this website, the text in this section is translucent, like glass text.
+                <br/><br/>
+                I believe that adding those interactions to the website's information will increase users' interest in the content and prevent them from quickly growing disinterested in it. I do not want any complicated animations or transitions to overpower the website's content. Therefore, I only employ these straightforward interactive activities because I like to engage people through those interactions while also making information more vivid and obvious through animations and transitions. 
+                <br/><br/>
+                Opacity, scale transitions, and colour styles in CSS, in my opinion, have helped to achieve the abstractive objective translucent look I went with for my design. The website's straightforward layout and the text's and graphics' basic interactive features have helped to achieve the information design goal. Despite the fact that those interactions can clearly communicate the information on the website, it would be preferable to have more translucent elements and interactions to enhance website engagement.
+                <br/><br/>
+                
+            </p>
+        </section>
+      
+
+        <a href="#home" class="scroll-up-btn">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </div>
+
     <script src="script.js"></script>
-
-  </head>
-
-  <body>
-    <h1>This is website</h1>
-  </body>
-
+</body>
 </html>
