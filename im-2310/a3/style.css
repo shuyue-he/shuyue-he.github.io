@@ -264,14 +264,14 @@ html {
 }
 
 .story-heading {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 500;
   color: #fff;
   margin-bottom: 1rem;
 }
 
 .story-paragraph {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #eee;
   text-align: justify;
   text-indent: 2rem;
@@ -280,6 +280,7 @@ html {
 
 /* This is the styles for the 500words of report. */
 .section-4 {
+  margin-top: 30rem;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -290,7 +291,7 @@ html {
 
 .report-paragraph {
   margin-top: 10rem;
-  font-size: 2rem;
+  font-size: 3rem;
   color:#fff;
   text-shadow: 2rem 2rem 4rem #aaa6a6;
   mix-blend-mode: overlay;
